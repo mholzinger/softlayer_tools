@@ -6,5 +6,5 @@ slcli ticket list \
   grep '[0-9]'|\
   while read ticketid
     do 
-      slcli ticket detail "$ticketid"|grep -E 'sorry|apologize|fault'
+      slcli ticket detail "$ticketid"|grep -E 'sorry|apologize|fault|soorry'
     done
